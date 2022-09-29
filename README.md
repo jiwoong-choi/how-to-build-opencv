@@ -17,11 +17,13 @@ sudo apt -y install build-essential cmake pkg-config \
 cd ~
 mkdir OpenCV4
 cd OpenCV4
+# Set the version as you'd like
 git clone -b 4.5.1 https://github.com/opencv/opencv
 git clone -b 4.5.1 https://github.com/opencv/opencv_contrib
 cd opencv
 mkdir build
 cd build
+# You may add or remove OpenCV Cmake options as appropriate
 cmake \
 -D CMAKE_BUILD_TYPE=Release \
 -D CMAKE_INSTALL_PREFIX=${HOME}/.local \
